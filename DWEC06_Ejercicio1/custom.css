@@ -1,0 +1,22 @@
+body {
+    margin: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contenedorImg {
+    display: flex;
+    width: 500px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;  /*Ocupa todo el ancho del contenedor*/
+    height: 100%;
+    object-fit: contain;
+}

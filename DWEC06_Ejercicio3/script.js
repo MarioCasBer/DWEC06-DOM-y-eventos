@@ -80,13 +80,13 @@ window.onload = function(){
         const regex = new RegExp(`^[${opciones.join('')}]{${numPartidos}}$`);
 
         //Comprobaciones
-        if (!regex.test(resultado)) {
-            mensajes.innerText = "Solo se permiten valores 1, X y 2.";
-            return;
-        }
-
         if(resultado.length != numPartidos){
             mensajes.innerText = "¡El resultado tiene una longitud erronea!";
+            return;
+        }
+        
+        if (!regex.test(resultado)) {
+            mensajes.innerText = "Solo se permiten valores 1, X y 2.";
             return;
         }
 
